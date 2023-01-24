@@ -34,6 +34,7 @@ p{
 }
 .container-fluid{
     padding: 3% 15%;
+    z-index: -1;
 }
 .container{
     padding: 0;
@@ -41,8 +42,10 @@ p{
 .row{
     margin: 0px;
 }
+
 #title{
     background-color: #ff4c68;
+    
 }
 .navbar-brand{
     font-family: 'Ubuntu', sans-serif;
@@ -53,20 +56,29 @@ p{
 }
 .download{
     margin-top : 100px;
+    margin-bottom: 100px;
 }
-.iphone{
-    transform: rotate(30deg);
-    margin-top: 50px;
-    width: 70%;
-}
+
+    .iphone{
+        transform: rotate(30deg);
+        margin-top: 50px;
+        margin-left: 80px;
+        width: 70%;
+    }
+    
+
+
 .nav-item{
     padding: 0 10px;
     font-size: 1.2rem;
 }
 #features{
+    background-color: white;
     justify-content: center;
     text-align: center;
-    padding: 0% 15%;
+    padding: 7% 15%;
+    position: relative;
+
 }
 .col-lg-4{
     padding: 20px 10px;
@@ -78,7 +90,7 @@ p{
 }
 #pros{
     padding: 0;
-    margin: 150px 0 150px 0;
+    
 }
 .fa-solid:hover{
     color: #c21933;
@@ -93,7 +105,7 @@ p{
 }
 .press-img{
     width: 15%;
-    margin: 10px 40px ;
+    margin: 10px 40px;
 }
 .carousel-item{
     padding: 7% 10%;
@@ -106,7 +118,10 @@ p{
     border-radius: 100%;
     border: 7px solid #424242;
     justify-content: center;
-    margin-left: 40px;
+}
+.div-test{
+    display: flex;
+justify-content: center;
 }
 .quote{
     font-family: "Montserrat";
@@ -169,3 +184,25 @@ p{
 .em:hover{
     color: #EA4335;
 }
+@media (max-width:1080px){
+        .iphone{
+            position:static;
+            transform: rotate(0);
+            margin: 0;
+        }
+        #title{
+            text-align: center;
+        }
+        
+        #cta{
+            font-size: 2rem;
+        }
+        .quote{
+            text-align: center;
+        }
+        .name{
+            padding-left: 50%;
+
+        }
+        
+    }
