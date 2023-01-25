@@ -184,7 +184,7 @@ justify-content: center;
 .em:hover{
     color: #EA4335;
 }
-@media (max-width:1080px){
+@media (min-width:720px){
         .iphone{
             position:static;
             transform: rotate(0);
